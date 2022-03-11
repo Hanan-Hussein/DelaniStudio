@@ -16,3 +16,6 @@
   margin-top: 12vh;
   margin-bottom: 5vh;
 }
+.bgService{
+  background-image: url('../assets/thirdBackground.jpg');
+}
