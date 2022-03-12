@@ -42,7 +42,14 @@
 .secondRow{
   padding-top: 1.5rem;
 }
+.bgContact{
+  background-image: url('../assets/contactBackground.jpg');
+  background-size: cover;
 
+}
+::placeholder{
+  color: #FFFFFF !important;
+}
 @media only screen and (max-width:600px) {
   .portfolio{
     padding-right: 0;
