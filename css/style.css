@@ -19,3 +19,13 @@
 .bgService{
   background-image: url('../assets/thirdBackground.jpg');
 }
+.services{
+  padding:6.5rem
+}
+
+#design,#development,#products{
+  display: none;
+}
+.whatwedo{
+  margin-right: 1rem;
+}
