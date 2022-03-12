@@ -18,6 +18,7 @@
 }
 .bgService{
   background-image: url('../assets/thirdBackground.jpg');
+  background-size: cover;
 }
 .services{
   padding:6.5rem
