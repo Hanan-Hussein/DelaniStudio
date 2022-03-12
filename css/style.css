@@ -29,3 +29,27 @@
 .whatwedo{
   margin-right: 1rem;
 }
+ .portfolio{
+  padding-right: 6rem;
+  padding-left: 6rem;
+
+}
+
+.res{
+  width: 100%;
+  
+}
+.secondRow{
+  padding-top: 1.5rem;
+}
+
+@media only screen and (max-width:600px) {
+  .portfolio{
+    padding-right: 0;
+    padding-left: 0;
+  
+  }
+  .secondRow{
+    padding: 0;
+  }
+}
