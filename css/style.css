@@ -54,6 +54,15 @@
   font-weight: bold;
   font-size: x-large;
 }
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer-img{
+  padding: 0.3rem;
+}
 @media only screen and (max-width:600px) {
   .portfolio{
     padding-right: 0;
