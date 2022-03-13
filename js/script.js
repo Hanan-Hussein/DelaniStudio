@@ -21,3 +21,8 @@ $('#portfolioImages').children().children().hover(function(){
     $('img',this).toggleClass('blurry_effect');
 });
 
+$('#contactForm').submit(function(e){
+    e.preventDefault();
+    
+})
+
