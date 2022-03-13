@@ -21,28 +21,25 @@ $('#portfolioImages').children().children().hover(function () {
     $('img', this).toggleClass('blurry_effect');
 });
 
-$('#contactForm').submit(function (e) {
-    e.preventDefault();
+$('#contactForm').submit(function () {
+    // e.preventDefault();
     var em = $('#email').val().toLowerCase();
     var name = $('#name').val();
     var message = $('#message').val();
 
-    if (name === "") {
-        alert("Please input name");
-    }
-    else if (email === "") {
-        alert("Please input email");
-    }
-    else if (message === "") {
-        alert("Please input ypur message");
-    }
+   
+    validateForm(name,em,message);
 
-
-    if (validateEmail(em) !== true) {
+     if(validateEmail(em) !== true) {
         alert("Enter a valid email");
-
+        return;
     }
-})
+    else{
+        alert("We have received your message , we will get in touch");
+        this.reset();
+    }
+
+});
 //validate email
 function validateEmail(email) {
     let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -56,4 +53,18 @@ function validateEmail(email) {
         return (false);
     }
 
+}
+function validateForm(name,email,message){
+    if (name === "") {
+        alert("Please input name");
+        return;
+    }
+    else if (email === "") {
+        alert("Please input email");
+        return;
+    }
+    else if (message === "") {
+        alert("Please input ypur message");
+        return;
+    }
 }
