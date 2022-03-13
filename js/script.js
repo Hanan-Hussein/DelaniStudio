@@ -21,8 +21,8 @@ $('#portfolioImages').children().children().hover(function () {
     $('img', this).toggleClass('blurry_effect');
 });
 
-$('#contactForm').submit(function () {
-    // e.preventDefault();
+$('#mc-embedded-subscribe-form').submit(function (e) {
+    e.preventDefault();
     var em = $('#email').val().toLowerCase();
     var name = $('#name').val();
     var message = $('#message').val();
@@ -32,10 +32,13 @@ $('#contactForm').submit(function () {
 
      if(validateEmail(em) !== true) {
         alert("Enter a valid email");
+        
+
         return;
     }
     else{
         alert("We have received your message , we will get in touch");
+        
         this.reset();
     }
 
