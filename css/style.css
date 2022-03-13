@@ -13,8 +13,8 @@
   color: white;
 }
 .mouse{
-  margin-top: 12vh;
-  margin-bottom: 5vh;
+  margin-top: 8vh;
+  margin-bottom: 3vh;
 }
 .bgService{
   background-image: url('../assets/thirdBackground.jpg');
@@ -30,6 +30,26 @@
 .whatwedo{
   margin-right: 1rem;
 }
+.welcome{
+  font-size: x-large;
+}
+
+/* input:focus{
+  outline:0px !important; 
+  box-shadow: none !important;
+} */
+/* .form-control:focus {
+  box-shadow: none !important;
+} */
+.form-control:focus ,.form-control{
+  /* border: none; */
+  box-shadow: none !important;
+  outline: none !important;
+  border-color:#FFFFFF !important;
+
+}
+
+
  .portfolio{
   padding-right: 6rem;
   padding-left: 6rem;
@@ -80,10 +100,9 @@
   font-weight: bold;
   color: white;
   z-index: 2;
-  
-
 
 }
+
 @media only screen and (max-width:600px) {
   .portfolio{
     padding-right: 0;
