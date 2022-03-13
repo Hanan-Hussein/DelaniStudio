@@ -38,6 +38,7 @@
 
 .res{
   width: 100%;
+  z-index: 1;
   
 }
 .secondRow{
@@ -64,6 +65,24 @@
 }
 .footer-img{
   padding: 0.3rem;
+}
+.blurry_effect{
+  filter: blur(1.5px);
+}
+.hoverText{
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border: #FFFFFF solid 4px;
+  padding: 2rem;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+  
+
+
 }
 @media only screen and (max-width:600px) {
   .portfolio{
