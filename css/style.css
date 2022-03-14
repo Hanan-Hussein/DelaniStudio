@@ -5,7 +5,7 @@
   font-family: 'Roboto Mono', monospace;
 }
 .bg{
-  background-image: url('/assets/landingBackground.jpg');
+  background-image: url('../assets/landingBackground.jpg');
   background-size: cover;
   height: 100vh;
 }
