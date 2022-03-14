@@ -25,18 +25,18 @@ $('#mc-embedded-subscribe-form').submit(function (e) {
     var name = $('#name').val();
     var message = $('#message').val();
 
-   
-    validateForm(name,em,message);
 
-     if(validateEmail(em) !== true) {
+    validateForm(name, em, message);
+
+    if (validateEmail(em) !== true) {
         alert("Enter a valid email");
-        
+
 
         return;
     }
-    else{
+    else {
         alert("We have received your message , we will get in touch");
-        
+
         this.reset();
     }
 
@@ -55,7 +55,7 @@ function validateEmail(email) {
     }
 
 }
-function validateForm(name,email,message){
+function validateForm(name, email, message) {
     if (name === "") {
         alert("Please input name");
         return;
