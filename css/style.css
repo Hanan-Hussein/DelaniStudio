@@ -14,7 +14,7 @@
   color: white;
 }
 .mouse{
-  margin-top: 8vh;
+  margin-top: 12vh;
   margin-bottom: 3vh;
 }
 .bgService{
@@ -27,9 +27,11 @@
 
 #design,#development,#products{
   display: none;
+  cursor: pointer;
 }
 .whatwedo{
   margin-right: 1rem;
+
 }
 .welcome{
   font-size: x-large;
@@ -82,13 +84,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
 
 }
 .footer-img{
   padding: 0.3rem;
 }
 .blurry_effect{
-  filter: blur(1.5px);
+  filter: blur(1.3px);
+  /* background-color: rgba(0, 0, 0, 0.7); */
 }
 .hoverText{
   display: none;
@@ -101,10 +105,18 @@
   font-weight: bold;
   color: white;
   z-index: 2;
+  background-color: rgba(0, 0, 0, .2);
+
 
 }
 
 @media only screen and (max-width:600px) {
+  #name{
+    margin-bottom: 1rem;
+  }
+  .res{
+    margin-bottom: 1.5rem;
+  }
   .portfolio{
     padding-right: 0;
     padding-left: 0;
